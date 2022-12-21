@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+
+}
+
+header { 
+  background-color: mediumslateblue;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+header div {
+  background-color: blueviolet;
+  width: 200px;
+  text-align: right;
+  padding-right: 10px;
+}
+
+head div h1 {
+  color:black;
+  font-size: 65px;
+}
+
+nav { 
+  padding-right: 150px;
+}
+
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav ul li  {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+}
+
+section {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 12px ;
+}
+
+section div.section-title {
+  width: 25%;
+  border-right: 4px solid black;
+  text-align: right;
+  padding-right: 10px;
+}
+
+section div.section-content {
+  width: 75%;
+  outline: 1px solid black;
+
+}
+
+div.work-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.work-items div {
+  background-color:blueviolet;
+  width: 50%;
+  height: 240px;
+  outline: 2px solid white;
+  flex-wrap: wrap;
+}
+
+div.work-items div.main-item {
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  div.work-item div {
+    width: 90%;
+    flex-direction: column;
+  }
+
+}
+
+div.contact-info {
+  background-color: mediumslateblue;
+  width: 50%;
+  height: 50px;
+  font-size: xx-large;
+
+}
