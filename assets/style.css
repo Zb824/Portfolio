@@ -69,6 +69,7 @@ section div.section-title {
 section div.section-content {
   width: 75%;
   outline: 1px solid black;
+  
 
 }
 
@@ -82,17 +83,15 @@ div.work-items div {
   width: 50%;
   height: 240px;
   outline: 2px solid white;
-  flex-wrap: wrap;
 }
 
 div.work-items div.main-item {
   width: 100%;
 }
 
-@media only screen and (max-width: 600px) {
-  div.work-item div {
-    width: 90%;
-    flex-direction: column;
+@media screen and (max-width: 600px) {
+  div.work-items div {
+    width: 100%;
   }
 
 }
@@ -102,5 +101,32 @@ div.contact-info {
   width: 50%;
   height: 50px;
   font-size: xx-large;
+
+}
+
+div.section-content-bio {
+  padding-left: 10px;
+}
+
+p {
+  /* padding-left: 10px; */
+  /* background-color: gold; */
+  /* color: Darkslateblue; */
+  /* opacity: .06; */
+  
+  
+  
+}
+
+.section-content.bio { 
+  padding-left: 10px;
+  background-color: gold;
+  color: Darkslateblue;
+  
+  
+
+  /* opacity: .06; */
+
+
 
 }
