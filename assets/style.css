@@ -1,33 +1,36 @@
 * {
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 html, body {
   margin: 0;
   padding: 0;
+  background-color: mediumslateblue ;
 
 }
 
 header { 
-  background-color: mediumslateblue;
+  background-color: blueviolet;
   height: 120px;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
+  text-align: center;
   
 }
 
 header div {
-  background-color: blueviolet;
+  background-color: mediumslateblue;
   width: 200px;
-  text-align: right;
+  /* text-align: right; */
   padding-right: 10px;
 }
 
 head div h1 {
   color:black;
-  font-size: 65px;
+  font-size: 100px;
+  
 }
 
 nav { 
@@ -36,17 +39,24 @@ nav {
 
 
 nav ul {
-  margin: 0;
-  padding: 0;
+  margin: 10;
+  padding: 10;
   list-style-type: none;
 }
 
 nav ul li  {
   display: inline;
+  
+  /* text-justify: auto; */
 }
 
 nav ul li a {
   color: white;
+  font-size: 35px;
+  border-bottom: 10px;
+  text-align: center;
+  
+  
 }
 
 section {
@@ -73,6 +83,9 @@ section div.section-content {
 
 }
 
+
+
+
 div.work-items {
   display: flex;
   flex-wrap: wrap;
@@ -83,6 +96,7 @@ div.work-items div {
   width: 50%;
   height: 240px;
   outline: 2px solid white;
+  /* border-radius: 10px; */
 }
 
 div.work-items div.main-item {
@@ -97,10 +111,11 @@ div.work-items div.main-item {
 }
 
 div.contact-info {
-  background-color: mediumslateblue;
-  width: 50%;
-  height: 50px;
-  font-size: xx-large;
+  background-color: gold;
+  width: 80px;
+  height: 150px;
+  /* font-size: ; */
+  /* border-radius: 10px; */
 
 }
 
@@ -108,25 +123,28 @@ div.section-content-bio {
   padding-left: 10px;
 }
 
-p {
-  /* padding-left: 10px; */
-  /* background-color: gold; */
-  /* color: Darkslateblue; */
-  /* opacity: .06; */
-  
-  
-  
-}
 
 .section-content.bio { 
   padding-left: 10px;
   background-color: gold;
   color: Darkslateblue;
-  
-  
 
-  /* opacity: .06; */
+}
+.contact {
+  /* padding-left: 20px; */
+  /* font-size: x-large; */
 
 
+  text-align: center;
 
+}
+
+img {
+  padding-left: 50px;
+  border-radius:50%;
+  width: 400px;
+}
+
+h3 {
+  font-size: 40px;
 }
