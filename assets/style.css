@@ -6,57 +6,68 @@
 html, body {
   margin: 0;
   padding: 0;
-  background-color: mediumslateblue ;
+  background-color: mediumslateblue;
+}
 
+header.nav {
+  text-align: end;
+  float: right;
 }
 
 header { 
   background-color: blueviolet;
   height: 120px;
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
   text-align: center;
-  
+  justify-content: space-between;
+  font-size: 40px;
 }
+
+#viewport h1 {
+  font-size: 35px;
+  justify-content: center;
+  padding-right: 20px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+
+}
+
 
 header div {
   background-color: mediumslateblue;
-  width: 200px;
-  /* text-align: right; */
+  width: 300px;
   padding-right: 10px;
+  text-align: end;
 }
 
-head div h1 {
+header.div, h1 {
   color:black;
-  font-size: 100px;
-  
 }
-
-nav { 
-  padding-right: 150px;
-}
-
 
 nav ul {
+  display: flex;
+  justify-content: flex-end;
   margin: 10;
   padding: 10;
   list-style-type: none;
 }
 
+
+
 nav ul li  {
   display: inline;
+  text-align: end;
+  padding-right:35px;
   
-  /* text-justify: auto; */
 }
 
 nav ul li a {
-  color: white;
+  justify-content: space-evenly 25px;
+  color: rgb(7, 1, 1);
   font-size: 35px;
   border-bottom: 10px;
-  text-align: center;
-  
-  
+
 }
 
 section {
@@ -79,12 +90,8 @@ section div.section-title {
 section div.section-content {
   width: 75%;
   outline: 1px solid black;
-  
 
 }
-
-
-
 
 div.work-items {
   display: flex;
@@ -96,50 +103,52 @@ div.work-items div {
   width: 50%;
   height: 240px;
   outline: 2px solid white;
-  /* border-radius: 10px; */
 }
 
-div.work-items div.main-item {
+div.work-items .main-item {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
+div.work-items .main-item img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+  
+}
+.img1 {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
 
 @media screen and (max-width: 600px) {
   div.work-items div {
     width: 100%;
   }
-
 }
 
 div.contact-info {
   background-color: gold;
   width: 80px;
   height: 150px;
-  /* font-size: ; */
-  /* border-radius: 10px; */
-
 }
 
-div.section-content-bio {
-  padding-left: 10px;
-}
-
-
-.section-content.bio { 
+.bio { 
   padding-left: 10px;
   background-color: gold;
   color: Darkslateblue;
-
+  display: flex;
 }
+
 .contact {
-  /* padding-left: 20px; */
-  /* font-size: x-large; */
-
-
   text-align: center;
-
 }
 
-img {
+.img {
   padding-left: 50px;
   border-radius:50%;
   width: 400px;
@@ -148,3 +157,16 @@ img {
 h3 {
   font-size: 40px;
 }
+
+.smallimage {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+
+
+
+
